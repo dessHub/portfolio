@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+  margin-left: $desktop-margin;
+  margin-right: $desktop-margin;
+
+  &__intro {
+    text-align: left;
+  }
+
+  &__intro-hi {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  &__intro-name {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .6em;
+
+    span {
+      font-style: italic;
+      font-size: small;
+      color: $third-color;
+    }
+  }
+
+  &__intro-title {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &__intro-subtitle {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+
+  @media (max-width: #{$large-screen}) {
+    display: grid;
+    grid-row: auto;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: $mobile-margin;
+    margin-right: $mobile-margin;
+
+
+    &__avatar {
+      grid-row: 1/2;
+      justify-content: center;
+    }
+
+    &__intro-hi, &__intro-name {
+      text-align: center;
+    }
+
+    &__intro-name {
+      font-size: 2em;
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar-frame > img {
+    border-style: dotted;
+    border-width: medium;
+    border-radius: 50%;
+    border-color: $third-color;
+    width: auto;
+    max-height: 150px;
+  }
+}
+
