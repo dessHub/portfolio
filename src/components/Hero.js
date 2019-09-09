@@ -9,6 +9,12 @@ function Hero() {
                <p className="hero__intro-name"><span>I'M</span> Korir Desmond</p>
  <p className="hero__intro-title"> <span role="img" aria-label="dev">👨🏽‍💻</span> <span>Full-stack Node Js | React | Vue Js Developer</span></p>
        <p className="hero__intro-subtitle">Blockchain Enthusiast! </p>
+
+       <div class="hero__socials">
+           <span><a href="https://github.com/dessHub" target="_blank">Github</a></span>
+           <span><a href="https://www.linkedin.com/in/kipngetich-korir-desmond/" target="_blank">LinkedIn</a></span>
+           <span><a href="https://twitter.com/DeskipL" target="_blank">Twitter</a></span>
+       </div>
       </div>
       <div className="hero__avatar">
         <div className="hero__avatar-frame">

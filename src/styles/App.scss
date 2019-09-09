@@ -45,6 +45,20 @@
     margin-top: 0;
   }
 
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    span {
+      margin-right: 1em;
+
+      a {
+        color: $third-color;
+      }
+    }
+  }
+
   @media (max-width: #{$large-screen}) {
     display: grid;
     grid-row: auto;
@@ -83,3 +97,30 @@
   }
 }
 
+.about {
+  margin-top: 3em;
+  margin-left: $desktop-margin;
+  margin-right: $desktop-margin;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: $heading;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__copy {
+    text-align: justify;
+  }
+
+  @media (max-width: #{$large-screen}) {
+    display: block;
+    margin-top: 2em;
+    margin-left: $mobile-margin;
+    margin-right: $mobile-margin;
+  }
+}
