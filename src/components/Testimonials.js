@@ -27,9 +27,9 @@ function Testimonials () {
       <div className="testimonials__body">
         <div class="testimonials__container left">
           <div class="testimonials__content">
-            <p className="testimonials__content-title">guy one</p>
+            <p className="testimonials__content-title">Rodgers Kishagha</p>
             <p className="testimonials__content-subtitle">(Software Engineer - Andela)</p>
-            <p className="testimonials__content-copy">COntent one</p>
+            <p className="testimonials__content-copy">Korir is not only skilled technically but also has the soft skills necessary to integrate seamlessly into a new team. He is passionate about technology and building products that can change the world. Working with him has been a great experience, especially how he uses his expertise in Javascript and software development as a whole to ensure the team meets its targets.</p>
           </div>
         </div>
       </div>

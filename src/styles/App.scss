@@ -4,6 +4,7 @@
   text-align: center;
   color: #fff;
   font-weight: 200;
+  padding: 0 0 2em 0;
 }
 
 .hero {
@@ -11,6 +12,8 @@
   margin-top: 5em;
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
+  padding-bottom: 2em;
+  border-bottom: $border-thin;
 
   &__intro {
     text-align: left;
@@ -110,9 +113,11 @@
 }
 
 .about {
-  margin-top: 3em;
+  margin-top: 1em;
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
+  padding-bottom: 1em;
+  border-bottom: $border-thin;
   display: grid;
   grid-template-columns: 30% 70%;
 
@@ -142,6 +147,7 @@
   margin-top: 3em;
   margin-left: $desktop-margin;
   margin-right: $desktop-margin;
+  border-bottom: $border-thin;
   display: flex;
   flex-direction: row;
   
@@ -150,14 +156,12 @@
   }
 
   &__list {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     text-align: left;
     flex-wrap: wrap;
     list-style: none;
-    border-top: 1px solid rgb(244, 242, 242);
-    border-bottom: 1px solid rgb(244, 242, 242);
-    padding: 2rem 0px;
+    padding: .5rem 0px;
   }
 
   &__list-item {
@@ -167,15 +171,13 @@
   }
 
   &__list-item::before {
-    content: "~";
+    content: "=>";
     display: inline-block;
     height: 1.5rem;
     width: 1.5rem;
-    margin-right: 0.5rem;
-    background-color: $third-color;
+    margin-right: 0.8rem;
+    color: $third-color;
     text-align: center;
-    border-style: groove;
-    border-radius: 50%;
   }
 
   &__title {
@@ -279,4 +281,39 @@
     left: 50%;
     border-left-style: solid; 
   }
+}
+
+.contact {
+  margin-top: 3em;
+  margin-left: $desktop-margin;
+  margin-right: $desktop-margin;
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: $heading;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__copy {
+    text-align: justify;
+    font-size: $medium-font;
+
+    span {
+      color: $third-color;
+    }
+  }
+
+  @media (max-width: #{$large-screen}) {
+    display: block;
+    margin-top: 2em;
+    margin-left: $mobile-margin;
+    margin-right: $mobile-margin;
+  }
+}
+
+.footer {
+  margin-top: 2em;
 }
