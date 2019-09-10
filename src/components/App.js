@@ -3,6 +3,7 @@ import '../styles/App.scss';
 import Hero from './Hero';
 import About from './About';
 import Experties from './Experties';
+import Testimonials from './Testimonials';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
        <Hero />
        <About />
        <Experties />
+       <Testimonials />
     </div>
   );
 }
