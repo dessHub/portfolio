@@ -1,0 +1,134 @@
+html,
+body {
+  background-color: #15202b;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #316a7d;
+}
+
+button {
+  color: #fff;
+  border: 0;
+}
+
+.layout {
+    color: #fff;
+    font-weight: 200;
+    padding: 0 0 2em;
+    margin: 0;
+    background-color: #15202b;
+}
+
+.header {
+    height: 4rem;
+    margin: auto 0;
+}
+
+.nav {
+  height: 100%;
+  
+  ul {
+    list-style: none;
+  }
+}
+
+.nav-desktop-only {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+
+    li {
+      margin-right: 3em;
+    }
+  }
+}
+
+.nav-mobile-only {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  position: relative;
+  margin-top: 0;
+
+  ul li {
+    padding: .5rem;
+  }
+}
+
+.nav-mobile {
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: .5rem 1rem;
+  }
+
+  &__off {
+    display: none;
+  }
+
+  &__on {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #15202b;
+    z-index: 2;
+    padding: .5rem 0;
+    text-align: center;
+  }
+}
+
+.nav-icon {
+    font-family: webflow-icons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-icon::before {
+  content: "\e602"
+}
+
+.nav-close-icon {
+  height: 1rem;
+  width: 1rem;
+}
