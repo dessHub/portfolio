@@ -8,9 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "image-trace-loader": "^1.0.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^7.1.0",
+    "imagemin-svgo": "^7.1.0",
+    "jimp": "^0.10.3",
+    "lqip-loader": "^2.2.0",
     "next": "9.3.6",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.0",
+    "next-optimized-images": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.26.5"
+    "responsive-loader": "^1.2.0",
+    "sass": "^1.26.5",
+    "svg-sprite-loader": "^5.0.0",
+    "webp-loader": "^0.6.0"
   }
 }

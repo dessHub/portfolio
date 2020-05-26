@@ -31,6 +31,9 @@ class Header extends React.Component {
                <a>Projects</a>
              </Link></li>
            </ul>
+           <ul>
+               <li><Link href="/"><a>Contact</a></Link></li>  
+           </ul>
           </nav>
 
           <nav className="nav nav-mobile-only">
@@ -53,6 +56,9 @@ class Header extends React.Component {
              </Link></li>
              <li><Link href="/projects">
                <a onClick={() => this.toggle()}>Projects</a>
+             </Link></li>
+             <li><Link href="/">
+               <a onClick={() => this.toggle()}>Contacts</a>
              </Link></li>
              <li>
                   <span onClick={() => this.toggle()}><img src="https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/592e4bc09c929c1e5f55d366_Close%20Icon.png" className="nav-close-icon" /></span>  
