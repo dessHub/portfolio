@@ -11,9 +11,9 @@ function Hero() {
        <p className="hero__intro-subtitle">Blockchain Enthusiast! </p>
 
        <div class="hero__socials">
-           <span><a href="https://github.com/dessHub" target="_blank">Github</a></span>
-           <span><a href="https://www.linkedin.com/in/kipngetich-korir-desmond/" target="_blank">LinkedIn</a></span>
-           <span><a href="https://twitter.com/DeskipL" target="_blank">Twitter</a></span>
+           <span><a href="https://github.com/dessHub" target="_blank" rel="noopener noreferrer">Github</a></span>
+           <span><a href="https://www.linkedin.com/in/kipngetich-korir-desmond/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+           <span><a href="https://twitter.com/DeskipL" target="_blank" rel="noopener noreferrer">Twitter</a></span>
        </div>
       </div>
       <div className="hero__avatar">
